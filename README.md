@@ -1,4 +1,34 @@
 # IM_LINE-like
+
+------------------------------------------------------------------------------------------
+* How to use
+------------------------------------------------------------------------------------------
+This program is using clsocket, make sure you have them make and built in your lib
+
+* To compile, use
+
+  g++ ServerMain.cpp -D_LINUX -std=c++11 -lclsocket
+  
+* To run, use
+
+  LD_LIBRARY_PATH=/usr/local/lib ./a.out
+  
+And this establish the server.
+
+Fill config.ini to adjust address and port.
+
+For clients, use:
+
+  telnet [IP Address] [Port] 
+
+  (As written in config.ini)
+ 
+ to start a dialog.
+
+------------------------------------------------------------------------------------------
+* Purpose
+------------------------------------------------------------------------------------------
+
 Internship test: making an instant messenger like LINE
 
 Compulsory: 1-1 instant message function
